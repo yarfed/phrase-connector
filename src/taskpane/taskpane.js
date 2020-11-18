@@ -9,7 +9,7 @@ import "../../assets/icon-32.png";
 import "../../assets/icon-80.png";
 
 /* global document, Office, Word */
-
+Office.initialize = function () {};
 Office.onReady(info => {
   if (info.host === Office.HostType.Word) {
     document.getElementById("sideload-msg").style.display = "none";
