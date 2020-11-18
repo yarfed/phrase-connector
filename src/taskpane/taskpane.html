@@ -1,0 +1,71 @@
+<!-- Copyright (c) Microsoft Corporation. All rights reserved. Licensed under the MIT License. -->
+<!-- This file shows how to design a first-run page that provides a welcome screen to the user about the features of the add-in. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contoso Task Pane Add-in</title>
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+    crossorigin="anonymous"></script>
+    <!-- Office JavaScript API -->
+    <script type="text/javascript" src="https://appsforoffice.microsoft.com/lib/1.1/hosted/office.js"></script>
+
+    <!-- For more information on Office UI Fabric, visit https://developer.microsoft.com/fabric. -->
+    <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/9.6.1/css/fabric.min.css"/>
+
+    <!-- Template styles -->
+    <link href="taskpane.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="ms-font-m ms-welcome ms-Fabric">
+    <header class="ms-welcome__header ms-bgColor-neutralLighter">
+        <img width="120" height="120" src="../../assets/logo.jpg" alt="Contoso" title="Contoso" />
+        <h3 class="ms-font-su">мегасофт</h3>
+    </header>
+    <section id="sideload-msg" class="ms-welcome__main">
+        <h2 class="ms-font-xl">Please sideload your add-in to see app body.</h2>
+    </section>
+    <main id="app-body" class="ms-welcome__main" style="display: none;">
+      
+      
+    <form>
+        <div>
+            <input type="radio" id="contactChoice1"
+             name="contact" value="На хуе"  checked>
+            <label for="contactChoice1" >пенис</label>
+        
+            <input type="radio" id="contactChoice2"
+             name="contact" value="На носу">
+            <label for="contactChoice2">нос</label>
+        
+          
+          </div>
+        <div>
+          <input type="checkbox" id="id1" name="subscribe" value="наблюдаются отчетливые позеленения">
+          <label for="subscribeNews">зеленый?</label>
+        </div>
+       
+          <div>
+            <input type="checkbox" id="id2" name="subscribe" value="имеются болевые ощущения">
+            <label for="subscribeNews">болит?</label>
+          </div>
+          <div>
+            <input type="checkbox" id="id3" name="subscribe" value="отделен от тела">
+            <label for="subscribeNews">отвалился?</label>
+          </div>
+       
+      </form>
+        <p class="ms-font-l">И че с ним? </p>
+        <div role="button" id="run" class="ms-welcome__action ms-Button ms-Button--hero ms-font-xl">
+            <span class="ms-Button-label">ЖМИ</span>
+        </div>
+    </main>
+</body>
+
+</html>
